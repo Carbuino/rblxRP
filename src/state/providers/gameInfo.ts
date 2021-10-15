@@ -50,7 +50,7 @@ export function getGameInfo(gameId:string):Promise<void | GameInfo> | GameInfo  
 
 export async function fetchRemoteConfig(): Promise<void> {
     console.log("[GIP ] Fetching remote config");
-    const response = await fetch("https://gist.githubusercontent.com/theLMGN/3799b5cb7b0328be7a13860e46832b0e/raw/rblxrp_config.json");
+    const response = await fetch("https://gist.githubusercontent.com/Carbuino/83025f204d0abf71d6b98d479380eec8/raw/c69c0b94c89a078394087817018c5528f852934f/rblxrp_custom_list.json");
     if (!response.ok) throw new Error(response.status + " " + response.statusText);
     const json = await response.json();
     for (const k in json.games) { gameInfoCache.set(k, json.games[k]); }
