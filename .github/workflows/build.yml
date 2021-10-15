@@ -32,9 +32,11 @@ jobs:
     - name: Archive Windows Zip
       uses: actions/upload-artifact@v2
       with:
-        name: code-coverage-report
+        name: rblxRP-Windows
         path: deploy/*-win32.zip
     
     - name: Archive MacOS Zip
       uses: actions/upload-artifact@v2
       with:
+        name: rblxRP-MacOS
+        path: deploy/*-win32.zip
