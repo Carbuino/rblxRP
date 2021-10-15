@@ -33,10 +33,10 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: rblxRP-Windows
-        path: deploy/*-win32.zip
+        path: deploy/win/*
     
     - name: Archive MacOS Zip
       uses: actions/upload-artifact@v2
       with:
         name: rblxRP-MacOS
-        path: deploy/*-win32.zip
+        path: deploy/rblxRP.app/*
